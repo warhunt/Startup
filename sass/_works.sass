@@ -1,0 +1,69 @@
+.works
+	padding: 75px 0
+	.menu
+		&__item-works
+			margin-right: 30px
+			cursor: pointer
+
+	&__filt
+		background-color: rgba($main, 0.7)
+		opacity: 0
+		transition: 0.5s
+	&__item
+		position: relative
+		width: 360px
+		height: 320px
+		margin-bottom: 25px
+		&:hover
+			.works
+				&__filt
+					opacity: 1
+			.infoWork
+				display: block
+	.infoWork
+		color: #fff
+		text-align: center
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 2
+		display: none
+		&__title
+			font-size: 18px
+			font-family: Montserrat
+			margin-bottom: 15px
+		&__subtitle
+			font-family: Roboto Slab
+			font-size: 12px
+			margin-bottom: 25px
+
+@media (max-width: 495px)
+	.works
+		&__menu
+			flex-direction: column
+	.menu
+		&__item-works
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+
+@media (max-width: 768px)
+	.works
+		&__filt
+			width: 320px
+			height: 284px
+		&__item
+			width: 320px
+			height: 284px
+
+@media (max-width: 360px)
+	.works 
+		&__filt
+			width: 300px
+			height: 266px
+		&__item
+			width: 300px
+			height: 266px
+
+

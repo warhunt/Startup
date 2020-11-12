@@ -1,0 +1,34 @@
+.services
+	.card
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__img
+			width: 90px
+			height: 90px
+			border-radius: 50%
+			border: 2px solid #dddddd
+			background-color: #ffffff
+			display: flex
+			justify-content: center
+			transition: 0.5s
+			color: $main
+			i 
+				line-height: 86px
+				font-size: 40px
+		&__title
+			margin: 25px 0
+			font-family: Montserrat
+			text-transform: uppercase
+		&__text
+			text-align: center
+			font-family: "Roboto Slab"
+		&:hover
+			.card__img
+				background-color: $main
+				color: #fff
+
+@media (max-width: 767px)
+	.services
+		&__card
+			margin-bottom: 40px	

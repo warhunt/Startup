@@ -1,0 +1,56 @@
+.about
+	background-color: $grey
+	&__text
+		font-family: "Roboto Slab"
+		margin-bottom: 70px
+	&__slick
+		.person
+			text-align: center
+			padding: 0px 10px
+			&__name
+				text-transform: uppercase
+				font-family: Montserrat
+				font-weight: bold
+				margin-bottom: 15px
+			&__job
+				font-size: 13px
+				font-family: Roboto Slab
+			&__img
+				position: relative
+				img
+					margin: 0 auto
+					margin-bottom: 20px
+			&:hover
+				.about__filt
+					opacity: 0.5
+				.icons
+					opacity: 1
+	&__filt
+		background-color: #555555
+		opacity: 0
+		transition: 0.5s
+
+.icons
+	display: flex
+	position: absolute
+	z-index: 3
+	bottom: 30px
+	left: 50%
+	transform: translate(-50%, 0)
+	opacity: 0
+	transition: 0.5s		
+	.icon
+		width: 30px
+		height: 30px
+		margin: 0 5px
+		position: relative
+		transition: 0.5s
+		color: #fff
+		line-height: 32px
+		font-size: 14px
+		text-align: center
+		&:hover
+			background-color: $main
+
+	
+	

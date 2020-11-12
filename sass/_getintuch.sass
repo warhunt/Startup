@@ -1,0 +1,64 @@
+.getintuch
+	&__item
+		span 
+			text-transform: uppercase
+			font-family: $monser
+			font-size: 14px
+			font-weight: bold
+			padding-left: 15px
+		p 
+			font-family: $roboto
+			font-size: 12px
+			padding-left: 32px
+	.form 
+		&__group
+			text-transform: uppercase
+			position: relative
+			margin-bottom: 24px
+		&__input
+			font-family: $roboto
+			font-size: 12px
+			outline: none
+			border: 1px solid $text
+			padding: 13px 20px
+			background-color: transparent
+			transition: 0.5s
+			color: $text
+			width: 100%
+			&:focus
+				border: 1px solid $main
+				& ~ .form__label
+					top: 0
+					color: rgba($main, 0.7)
+					z-index: 1
+					font-size: 10px
+			&:not(:placeholder-shown)
+				& ~ .form__label
+					top: 0
+					z-index: 1	
+					font-size: 10px
+		&__label
+			font-family: $roboto
+			font-size: 12px
+			position: absolute
+			z-index: -1
+			transition: 0.5s
+			top: 19px
+			transform: translateY(-50%)
+			left: 20px
+			background-color: #fff
+			color: rgba($text, 0.7)
+		&__btn
+			border: 1px solid $text
+			color: $text
+			font-family: $roboto
+			font-weight: normal
+			font-size: 12px
+			padding: 13px 35px
+			text-align: center
+			&:hover 
+				color: $main
+				border: 1px solid $main
+		&__text
+			span 
+				color: red
